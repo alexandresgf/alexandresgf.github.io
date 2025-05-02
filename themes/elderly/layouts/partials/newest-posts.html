@@ -1,0 +1,24 @@
+{{ $posts := where .Site.RegularPages "Type" "posts" }}
+{{ $recentPosts := first 5 $posts }}
+
+<div class="newest-posts">
+    <h3 class="newest-posts-title">Recent Posts</h3>
+    {{ if $recentPosts }}
+        {{ range $recentPosts }}
+            <div class="newest-posts-item">
+                <df class="newest-posts-date">
+                    {{ .Date.Format "Jan 02, 2006" }}
+                </df>
+                <dd class="newest-posts-title">
+                    <a href="{{ .RelPermalink }}" class="newest-posts-link">
+                        {{ .Title }}
+                    </a>
+                </dd>
+            </div>
+        {{ end }}
+    {{ else }}
+        <div class="newest-posts-empty">
+            Nothing to see here...
+        </div>
+    {{ end }}
+</div> 

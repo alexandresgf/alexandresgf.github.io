@@ -1,0 +1,22 @@
+name = "Elderly"
+license = "MIT"
+licenselink = "https://github.com/grindlabs/hugo-nineties/blob/main/LICENSE.md"
+description = "A 90s' old style personal blog for Hugo"
+homepage = "https://github.com/grindlabs/hugo-elderly"
+# demosite = "https://owner.github.io/repo"
+tags = [
+    "blog",
+    "personal",
+    "clean",
+    "simple",
+    "responsive",
+    "minimal",
+    "retro"
+]
+# features = []
+min_version = "0.125.0"
+
+authors = [
+  {name = "Alexandre Ferreira", homepage = "https://alexandre.wtf/"},
+  {name = "GrindLabs", homepage = "https://grindlabs.dev/"}
+]

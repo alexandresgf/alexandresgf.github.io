@@ -1,0 +1,14 @@
+{{ if .IsHome }}
+    <div class="profile">
+        <div class="profile-header text-center">
+            <a href="{{ .Site.BaseURL }}" title="Home Page">
+                <img src="{{ site.Params.profile.avatar }}" alt="{{ site.Title }}" class="profile-avatar" />
+            </a>
+            <p class="profile-name h2 mb-2">{{ .Site.Params.profile.name }}</p>
+            <p class="profile-role h3">{{ .Site.Params.profile.role }}</p>
+        </div>
+        {{ partial "social.html" . }}
+    </div>
+{{ else }}
+    {{ partial "single-navbar.html" . }}
+{{ end }}

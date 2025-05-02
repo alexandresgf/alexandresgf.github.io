@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+
+<!-- Meta tags for SEO and sharing -->
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+<meta name="author" content="{{ site.Params.author | default site.Title }}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+<meta property="og:image" content="{{ site.Params.head.og_image | absURL }}">
+
+<!-- Favicon -->
+<link rel="icon" href="{{ "favicon.ico" | relURL }}" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "favicon/ios/icon-180x180.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon/icon-32x32.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon/icon-16x16.png" | relURL }}">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{ partialCached "head/css.html" . }}
+{{ partialCached "head/js.html" . }}

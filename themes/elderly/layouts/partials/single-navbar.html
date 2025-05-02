@@ -1,0 +1,32 @@
+<nav class="single-navbar">
+    <div class="single-navbar-container">
+        <a href="/" class="single-navbar-back">
+            <span class="single-navbar-back-text">Back</span>
+        </a>
+        
+        <div class="single-navbar-right">
+            <div class="single-navbar-social">
+                {{ with .Site.Params.social.github }}
+                <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="single-navbar-social-link" aria-label="GitHub">
+                    <img src="/icons/github.svg" alt="GitHub" class="single-navbar-social-icon">
+                </a>
+                {{ end }}
+
+                {{ with .Site.Params.social.linkedin }}
+                <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="single-navbar-social-link" aria-label="LinkedIn">
+                    <img src="/icons/linkedin.svg" alt="LinkedIn" class="single-navbar-social-icon">
+                </a>
+                {{ end }}
+
+                {{ with .Site.Params.social.twitter }}
+                <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="single-navbar-social-link" aria-label="Twitter">
+                    <img src="/icons/twitter.svg" alt="Twitter" class="single-navbar-social-icon">
+                </a>
+                {{ end }}
+            </div>
+            <a href="/" title="Home Page">
+                <img src="{{ site.Params.profile.avatar }}" alt="{{ site.Title }}" class="single-navbar-logo">
+            </a>
+        </div>
+    </div>
+</nav> 
