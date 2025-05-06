@@ -67,7 +67,7 @@ main {
     width: 900px;
     max-width: 95%;
     margin: 0 auto;
-    padding: 1.5rem 0;
+    padding: 0;
 }
 
 h1,
@@ -141,6 +141,37 @@ ul,
 ol {
     padding-left: 2rem;
     margin-bottom: 1.2em;
+}
+
+/* Terms list styling */
+.terms {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+.terms-item {
+    display: inline;
+    margin-right: 1rem;
+    text-transform: lowercase;
+}
+
+.terms-item::before {
+    content: "#";
+    color: #8d5b2c; /* Using the theme's link color */
+}
+
+.terms-item:last-child {
+    margin-right: 0;
+}
+
+.terms-label {
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 1.3;
+    display: inline;
+    margin-right: 0rem;
 }
 
 /* Enhanced Responsive Design */
@@ -517,6 +548,6 @@ ol {
 }
 
 /* Adjust main content to account for fixed navbar */
-.single-page main {
-    margin-top: 40px;
+.not-home {
+    min-height: 0;
 }

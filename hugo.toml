@@ -1,7 +1,7 @@
-baseURL = 'https://alexandre.wtf/'
-languageCode = 'en-us'
-title = 'Alexandre Ferreira - Data & AI Engineer'
-theme = ['elderly']
+baseURL = "https://alexandre.wtf/"
+languageCode = "en-us"
+title = "Alexandre Ferreira"
+theme = ["elderly"]
 
 
 [Params]
