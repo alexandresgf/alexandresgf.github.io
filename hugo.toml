@@ -1,8 +1,11 @@
 baseURL = "https://alexandre.wtf/"
 languageCode = "en-us"
-title = "Alexandre Ferreira"
 theme = ["elderly"]
+title = "Alexandre Ferreira"
 
+[caches]
+[caches.images]
+dir = ":cacheDir/images"
 
 [Params]
 author = "Alexandre Ferreira"
@@ -12,9 +15,9 @@ description = "Alexandre Ferreira's personal website, blog and portfolio, showca
 og_image = "image/favicon/icon-64x64.png"
 
 [Params.profile]
+avatar = "/images/avatar.png"
 name = "Alexandre Ferreira"
 role = "Data & AI Engineer"
-avatar = "/images/avatar.png"
 
 [Params.social]
 github = "https://github.com/alexandresgf"
