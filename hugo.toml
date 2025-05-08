@@ -9,7 +9,7 @@ dir = ":cacheDir/images"
 
 [Params]
 author = "Alexandre Ferreira"
-description = "Alexandre Ferreira's personal website, blog and portfolio, showcasing his work and expertise in Data and AI engineering, also personal projects."
+description = "Alexandre Ferreira's personal website, blog and portfolio, showcasing his work and expertise in Data Extraction and Data Engineering, also personal projects."
 
 [Params.head]
 og_image = "image/favicon/icon-64x64.png"
@@ -17,7 +17,7 @@ og_image = "image/favicon/icon-64x64.png"
 [Params.profile]
 avatar = "/images/avatar.png"
 name = "Alexandre Ferreira"
-role = "Data & AI Engineer"
+role = "Data Extraction & Data Engineering"
 
 [Params.social]
 github = "https://github.com/alexandresgf"
