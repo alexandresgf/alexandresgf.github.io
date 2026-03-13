@@ -17,6 +17,6 @@ tags = [
 min_version = "0.125.0"
 
 authors = [
-  {name = "Alexandre Ferreira", homepage = "https://alexandre.wtf/"},
+  {name = "Alexandre Ferreira", homepage = "https://alexandresgf.github.io/"},
   {name = "GrindLabs", homepage = "https://grindlabs.dev/"}
 ]

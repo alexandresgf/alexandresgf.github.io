@@ -1,4 +1,4 @@
-baseURL = "https://alexandre.wtf/"
+baseURL = "https://alexandresgf.github.io/"
 languageCode = "en-us"
 theme = ["elderly"]
 title = "Alexandre Ferreira"
@@ -9,7 +9,7 @@ dir = ":cacheDir/images"
 
 [Params]
 author = "Alexandre Ferreira"
-description = "Alexandre Ferreira's personal website, blog and portfolio, showcasing his work and expertise in Data Extraction and Data Engineering, also personal projects."
+description = "Alexandre Ferreira's personal website, blog and portfolio, showcasing his work and expertise in Web Scraping, Data Engineering, and AI tools, also personal projects."
 
 [Params.head]
 og_image = "image/favicon/icon-64x64.png"
@@ -17,7 +17,7 @@ og_image = "image/favicon/icon-64x64.png"
 [Params.profile]
 avatar = "/images/avatar.png"
 name = "Alexandre Ferreira"
-role = "Data Extraction & Data Engineering"
+role = "Web Scraping Specialist | Data Engineer | AI Engineer"
 
 [Params.social]
 github = "https://github.com/alexandresgf"
